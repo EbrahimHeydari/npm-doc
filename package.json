@@ -34,5 +34,8 @@
     "npm learning",
     "package manager"
   ],
-  "description": "A package.sjon file for test npm"
+  "description": "A package.sjon file for test npm",
+  "dependencies": {
+    "npm-demo-pkg": "^2.0.0"
+  }
 }
