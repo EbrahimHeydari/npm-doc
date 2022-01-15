@@ -1,0 +1,38 @@
+{
+  "name": "npm",
+  "version": "1.0.1",
+  "main": "index.js",
+  "private":"true",
+  "config": {
+    "name": "Ebrahim Heidary"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node sayHello.js"
+  },
+  "author": {
+    "name": "Ebrahim Heidary",
+    "email": "akbrly42@gmail.com"
+  },
+  "contritutors": [
+    {
+      "name": "Ali",
+      "email": "ahriman780@yahoo.com"
+    },
+    {
+      "name": "Hossein",
+      "email": "koko@yahoo.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "license": "MIT",
+  "keywords": [
+    "npm",
+    "npm learning",
+    "package manager"
+  ],
+  "description": "A package.sjon file for test npm"
+}

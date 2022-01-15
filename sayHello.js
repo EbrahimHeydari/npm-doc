@@ -1,0 +1,1 @@
+console.log("Hello", process.env.npm_package_config_name);

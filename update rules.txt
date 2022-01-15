@@ -1,0 +1,18 @@
+// semantic version
+
+"react": "17.0.2"
+
+17: major version => تغییرات اساسی
+
+0:  minor version => افزودن قابیلت های جدید
+
+2:  patch version => رفع مشکلات کوچک
+
+
+"react": "*" => آپدیت تا آخرین نسخه موجود ( از این مورد نباید استفاده شود) 
+
+"react": "^17.0.2" => آپدیت تا major version 
+
+"react": "~17.0.2" => آپدیت تا minor version 
+
+"react": "17.0.2" => نصب یا آپدیت تا همان ورژن
