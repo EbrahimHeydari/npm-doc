@@ -1,32 +1,69 @@
-npm -l                                                // نمایش لیست تمام دستورات اصلی به همراه توضیحات
+npm -l                                             // نمایش لیست تمام دستورات اصلی به همراه توضیحات
 
-npm init                                              // مقدار دهی اولیه 
+npm init                                           // مقدار دهی اولیه 
 
-npm init - y | --yes                                  // مقدار دهی اولیه بودن پرسش 
+npm init - y | --yes                               // مقدار دهی اولیه بودن پرسش 
 
-npm -v | --version                                    // نمایش ورژن
+npm -v                                             // نمایش ورژن
 
-npm config ls -l                                      // نمایش لیست تمام مقادیر ممکن کانفیگ
+npm config ls -l                                   // نمایش لیست تمام مقادیر ممکن پیکربندی
 
-npm set init-author-name "author-name"                // تغییر نام پیشفرض کد نویس
+npm config edit                                    // تغییر مقادیر پیشفرض پیکربندی
 
-npm set init-license "license-name"                   // تغییر لایسنس پیشفرض
+npm config list                                    // نمایش لیست پیکربندی های تغییر داده شده
 
-npm i | install package-name                          // نصب پکیج
+npm set init-author-name "author-name"             // تغییر نام پیشفرض کد نویس
 
-npm i | install package-name -D                       // نصب پکیج در حالت توسعه
+npm set init-license "license-name"                // تغییر لایسنس پیشفرض
 
-npm i | install package-name@1.0.0                    // نصب نسخه ای خاص از یک ورژن
+npm i package-name                                 // نصب پکیج
 
-npm rm | remove | un | uninstall package-name         // حذف پکیج
+npm i package-name -g                              // نصب پکیج به صورت سراسری
 
-npm rm | remove | un | uninstall package-name -D      // حذف در حالت توسعه
+npm i package-name -D                              // نصب پکیج در حالت توسعه
 
-npm root                                              // نمایش آدرس نصب پکیج ها
+npm i package-name@1.0.0                           // نصب نسخه ای خاص از یک پکیج
 
-npm list                                              // نمایش لیست پکیج ها به همراه وابستگی ها
+npm rm | un package-name                           // حذف پکیج خاص
 
-npm list --depth 0                                    // نمایش لیست پکیج ها بدون وابستگی ها
+npm rm | un package-name -D                        // حذف پکیج در حالت توسعه
 
-npm audit fix                                         // رفع مشکلات امنیتی پکیج ها
+npm rm | un package-name -g                        // حذف پکیج به صورت سراسری
 
+npm root                                           // نمایش آدرس نصب پکیج ها
+
+npm root -g                                        // نمایش آدرس نصب پکیج های سراسری
+
+npm ls | list                                      // نمایش لیست پکیج ها به همراه وابستگی ها
+
+npm list --depth=0                                 // نمایش لیست پکیج ها بدون وابستگی ها
+
+npm audit fix                                      // رفع مشکلات امنیتی پکیج ها
+
+npm outdated                                       // نمایش لیست پکیج هایی که نیاز به بروزرسانی دارند
+
+npm outdated -g --depth=0                          // نمایش لیست پکیج های سراسری که نیاز به بروزرسانی دارند
+
+npm up                                             // به روزرسانی تمام پکیج ها
+
+npm up -g                                          // به روزرسانی تمام پکیج ها به صورت سراسری
+
+npm up -g package-name                             // به روزرسانی پکیج سراسری خاص
+
+npm ddp | dedupe                                   // کاهش تکرار در ساختار لیست وابستگی ها
+
+npm docs package-name                              // رفتن به صفحه داکیومنت پکیج
+
+npm explain package-name                           // جزئیات وابستگی ها و مسیر پکیج
+
+npm pack package-name                              // ساخت tarball برای پکیج
+
+npm ping                                           // نمایش سرعت دانلود پکیج ها
+
+npm rb | rebuild package-name                      // بازسازی پکیج
+
+npm repo package-name                              // باز کردن مخزن پکیج
+
+npm set-script start "node index.js"               // تنظیم اسکریپ برای حالت استارت
+
+npm whoami                                         // نمایش نام کاربری، زمانی که لاگین کرده اید
