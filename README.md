@@ -3,4 +3,4 @@
 
 #### i hope have been useful for you 😉
 
-#### in addition, this document written by Persian language
+#### in addition, this document written by Persian language and there is a .js file for test colors package.
