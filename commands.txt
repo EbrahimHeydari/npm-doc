@@ -69,3 +69,5 @@ npm set-script start "node index.js"               // تنظیم اسکریپ ب
 npm whoami                                         // نمایش نام کاربری، زمانی که لاگین کرده اید
 
 npm i --package-lock-only                          // ساخت فایل package-lock.json
+
+npm rm -rf node_modules                            // unknown
